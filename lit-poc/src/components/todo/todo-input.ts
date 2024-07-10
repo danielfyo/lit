@@ -48,7 +48,7 @@ export class TodoInput extends LitElement {
 
   render() {
     return html`
-      <input @keypress=${(event: Event) => {
+      <input @keypress=${(event: KeyboardEvent) => {
         if(event.code.toString() == 'Enter') {
           this.handleClick();
         }}
