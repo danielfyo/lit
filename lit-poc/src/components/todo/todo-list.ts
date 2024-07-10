@@ -1,6 +1,6 @@
 import { LitElement, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import todoStore, { ITodoItem, ITodoStore } from '../../store/todo';
+import todoStore, { ITodoItem, ITodoStore } from './store';
 
 @customElement('todo-list')
 export class TodoList extends LitElement {
@@ -18,7 +18,7 @@ export class TodoList extends LitElement {
       border: 0;
       background: none;
     }
-    
+
     p {
       text-align: center;
       width: 100%;

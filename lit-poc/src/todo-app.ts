@@ -1,10 +1,10 @@
 import { LitElement, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import todoStore, { ITodoStore } from './store/todo';
+import todoStore, { ITodoStore } from './components/todo/store';
 
 import 'kemet-ui/dist/components/kemet-button/kemet-button';
-import './components/todo-input/todo-input';
-import './components/todo-list/todo-list';
+import './components/todo/todo-input';
+import './components/todo/todo-list';
 
 @customElement('todo-app')
 export class TodoApp extends LitElement {
@@ -35,7 +35,7 @@ export class TodoApp extends LitElement {
       --kemet-card-footer-border-top: 1px solid rgb(var(--kemet-color-gray-800));
       --kemet-card-color: rgb(var(--kemet-color-gray-300));
       --kemet-card-border-radius: 1rem;
-    
+
       display: flex;
       gap: 1rem;
       width: 100%;

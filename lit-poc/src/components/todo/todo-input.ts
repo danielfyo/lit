@@ -1,6 +1,6 @@
 import { LitElement, css, html } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
-import todoStore, { ITodoStore } from '../../store/todo';
+import todoStore, { ITodoStore } from './store';
 
 @customElement('todo-input')
 export class TodoInput extends LitElement {
@@ -54,6 +54,9 @@ export class TodoInput extends LitElement {
   }
 
   handleClick() {
+    if(this.todoInput.value === ''){
+      return;
+    }
     this.todoState.addTodo({ value: this.todoInput.value, checked: false });
     this.todoInput.value = '';
   }
