@@ -9,3 +9,8 @@ project generator
 https://open-wc.org/docs/development/generator/
 
 npm init @open-wc
+
+yarn install
+
+yarn start
+
