@@ -1,0 +1,23 @@
+@use 'kemet-ui/dist/styles/kemet.base';
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2;
+  color: rgb(var(--kemet-color-gray-300));
+  background-color: rgb(var(--kemet-color-gray-800));
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
