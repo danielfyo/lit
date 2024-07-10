@@ -55,6 +55,7 @@ export class TodoInput extends LitElement {
 
   handleClick() {
     this.todoState.addTodo({ value: this.todoInput.value, checked: false });
+    this.todoInput.value = '';
   }
 }
 
